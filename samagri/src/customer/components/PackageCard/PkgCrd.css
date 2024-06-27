@@ -1,0 +1,27 @@
+.package-card{
+    width: 1600px;
+}
+.title{
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #FF9900;
+    column-gap: 10px;
+}
+.small-bx{
+    width: 10px;
+    height: 30px;
+    background-color: #FF9900;
+    border-radius: 2px;
+}
+.card-grp{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    border: 1px solid #cecccc;
+    border-radius: 5px;
+}
