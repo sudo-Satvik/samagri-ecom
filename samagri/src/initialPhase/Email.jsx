@@ -37,7 +37,7 @@ const Email = () => {
                 <div>
                   <button
                     type="submit"
-                    className="py-3 w-[7rem] px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-[#DB4444] hover:bg-[rgb(215 100 100)] border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300"
+                    className="py-3 w-[8rem] px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-[#DB4444] hover:bg-[rgb(215 100 100)] border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300"
                   >
                     Sign up
                   </button>
