@@ -22,9 +22,9 @@ const Coming = () => {
             <img src={LogoImg} alt="" className='w-40 mx-auto'/>
         </p>
         <div className="bg-gray-200 p-[1px] my-5"></div>
-        <h1 className='text-3xl sm:text-4xl font-medium mt-10 text-[#ff9900] uppercase tracking-widest'>joining the vip list</h1>
+        <h1 className='text-3xl sm:text-4xl font-medium mt-10 text-[#ff9900] uppercase tracking-widest'>joining as premium member</h1>
         <p className='text-lg justified mt-4 text-gray-600 mx-auto px-3'>
-            Get invite for 10% off at the grand opening if you sign up now.
+            Get 10% off at the grand opening if you sign up now.
             <Email/>
         </p>
         <div className="flex justify-center gap-10 text-xl">
