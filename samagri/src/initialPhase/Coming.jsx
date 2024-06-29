@@ -16,15 +16,15 @@ const Coming = () => {
     <div className="text-center w-full mt-[70px]">
         <h1 className='text-4xl sm:text-6xl font-medium mt-10 text-[#ff9900] uppercase tracking-widest'>Who we are?</h1>
         <p className='text-lg sm:px-0 px-3 sm:text-center text-justify mt-4 text-gray-600 max-w-screen-xl mx-auto'>
-            We are <b>SAMAGRI</b>. SAMAGRI is a one one stop solution for all your religious ceremonies. We are committed to provide you with the most authentic SAMAGRI in the best possible manner.
+            We are <b>SAMAGRI</b>. SAMAGRI is a one stop solution for all your religious ceremonies. We are committed to provide you with the most authentic SAMAGRI in the best possible manner.
             The packages has been curated consulting the pandits from culturally significant cities and believed to be best in following the religious rituals.
             Presenting Samagri, the spiritual story of your, mine and our homes.
             <img src={LogoImg} alt="" className='w-40 mx-auto'/>
         </p>
         <div className="bg-gray-200 p-[1px] my-5"></div>
-        <h1 className='text-3xl sm:text-4xl font-medium mt-10 text-[#ff9900] uppercase tracking-widest'>joining as premium member</h1>
+        <h1 className='text-3xl sm:text-4xl font-medium mt-10 text-[#ff9900] uppercase tracking-widest'>Swagatam Yajmaan!</h1>
         <p className='text-lg justified mt-4 text-gray-600 mx-auto px-3'>
-            Get 10% off at the grand opening if you sign up now.
+        Sign up now and get 10% off at 'Subharambh'
             <Email/>
         </p>
         <div className="flex justify-center gap-10 text-xl">
