@@ -34,9 +34,10 @@ const Email = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          alert("Email is successfully sent")
         },
         (error) => {
+          alert("Some unexpected error occurred, please try again later!  ")
           console.log('FAILED...', error.text);
         },
       );
