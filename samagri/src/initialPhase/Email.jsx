@@ -1,12 +1,52 @@
-import React from "react";
-
+import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+// import { response } from "express";
 const Email = () => {
+  // const [email, setEmail] = useState('');z
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const serviceId = 'service_e2xvkdm'
+  //   const templateId = 'template_en9urze'
+  //   const publicKey = 'xHCmSR-PkbrwzLaN1'
+
+  //   const templateParams = {
+  //     from_email: email
+  //   }
+  //   console.log(email);
+  //   emailjs.sendForm(serviceId, templateId, templateParams, publicKey)
+  //   .then((response)=>{
+  //     console.log('Email sent successfully!', response);
+  //     setEmail('');
+  //   })
+  //   .catch((error) =>{
+  //     console.error("Error sending email", error);
+  //   })
+  // }
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_e2xvkdm', 'template_en9urze', form.current, {
+        publicKey: 'xHCmSR-PkbrwzLaN1',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <div>
       <section className="bg-white">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md sm:text-center">
-            <form action="#">
+            <form onSubmit={handleSubmit} ref={form}>
               <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                 <div className="relative w-full">
                   <label
@@ -32,6 +72,9 @@ const Email = () => {
                     type="email"
                     id="email"
                     required=""
+                    name="user_email"
+                    // value={email}
+                    // onChange={(e)=>setEmail(e.target.value)}
                   />
                 </div>
                 <div>
