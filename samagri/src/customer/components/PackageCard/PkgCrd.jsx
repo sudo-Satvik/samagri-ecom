@@ -13,7 +13,12 @@ function PkgCrd() {
         </div>
         <h3 className="text-2xl sm:text-3xl text-gray-900 font-semibold mt-4">Browse by Packages</h3>
         <div className="card-grp">
-            <Pkg packageName={"Bla Bla Bla"}/>
+            <Pkg packageName={"Rudrabhishek"}/>
+            <Pkg packageName={"Category 2"}/>
+            <Pkg packageName={"Category 3"}/>
+            <Pkg packageName={"Category 4"}/>
+            <Pkg packageName={"Category 5"}/>
+            <Pkg packageName={"Category 6"}/>
         </div>
     </div>
     </>
